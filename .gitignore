@@ -4,6 +4,6 @@ build/
 bin/
 
 *.sublime-project
-*.siblime-workspace
+*.sublime-workspace
 
 images/
