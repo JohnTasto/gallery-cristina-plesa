@@ -19,5 +19,3 @@ $('.gallery a').click(function(event) {
 $overlay.click(function() {
   $overlay.hide();
 });
-
-//# sourceMappingURL=app.js.map

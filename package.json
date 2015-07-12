@@ -1,0 +1,32 @@
+{
+  "name": "gallery-cristina-plesa",
+  "version": "0.1.0",
+  "description": "Simple single page artist gallery",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JohnTasto/gallery-cristina-plesa.git"
+  },
+  "keywords": [
+    "parallax",
+    "gallery"
+  ],
+  "author": "John Tasto",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JohnTasto/gallery-cristina-plesa/issues"
+  },
+  "homepage": "https://github.com/JohnTasto/gallery-cristina-plesa#readme",
+  "devDependencies": {
+    "del": "^1.2.0",
+    "gulp": "^3.9.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.0.3",
+    "gulp-sourcemaps": "^1.5.2",
+    "gulp-uglify": "^1.2.0"
+  }
+}

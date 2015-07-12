@@ -2,8 +2,12 @@
 *~
 build/
 bin/
+node_modules/
 
 *.sublime-project
 *.sublime-workspace
+.settings/
 
 images/
+
+parallax.html
