@@ -22,11 +22,11 @@ gulp.task('minifyScripts', ['concatScripts'], function() {
   return gulp.src('js/app.js')
              .pipe(uglify())
              .pipe(rename('app.min.js'))
-             .pipe(gulp.dest('js'));
+             .pipe(gulp.dest('dist/js'));
 });
 
 gulp.task('compileSass', function() {
-  return gulp.src('scss/main.scss')
+  return gulp.src('css/main.scss')
              .pipe(sourcemaps.init())
              .pipe(sass())
              .pipe(autoprefixer(['last 2 versions', 'safari 5', 'ie6', 'ie7', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4']))
@@ -39,11 +39,11 @@ gulp.task('minifyCSS', ['compileSass'], function() {
   return gulp.src('css/app.css')
              .pipe(minifycss())
              .pipe(rename('app.min.css'))
-             .pipe(gulp.dest('css'));
+             .pipe(gulp.dest('dist/css'));
 })
 
 gulp.task('watch', function() {
-  gulp.watch('scss/**/*.scss', ['compileSass']);
+  gulp.watch('css/**/*.scss', ['compileSass']);
   gulp.watch('js/main.js', ['concatScripts']);
 });
 
@@ -52,7 +52,7 @@ gulp.task('clean', function() {
 });
 
 gulp.task('build', ['minifyScripts', 'minifyCSS'], function() {
-  return gulp.src(['css/app.css', 'js/app.js', 'index.html', 'img/**'], { base: './' })
+  return gulp.src(['index.html', 'images/**'], { base: './' })
              .pipe(gulp.dest('dist'));
 });
 
